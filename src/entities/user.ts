@@ -1,8 +1,8 @@
 import { ObjectType, Field } from 'type-graphql';
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, BaseEntity } from 'typeorm';
 
-@ObjectType("User")
-@Entity('user')
+@ObjectType("Users")
+@Entity('users')
 export class User extends BaseEntity {
 
     @Field()
@@ -24,10 +24,6 @@ export class User extends BaseEntity {
     @Field()
     @Column()
     password: string;
-
-    @Field()
-    @CreateDateColumn({ name: 'created_at', type: 'timestamp' })
-    createdAt: Date;
 
     @Field({ nullable: true })
     @Column({ nullable: true })

@@ -22,11 +22,6 @@ export class RegisterArgs {
   @Field()
   password: string;
 
-  @Field({ nullable: true })
-  role?: string;
-
-  @Field({ nullable: true })
-  crcId?: number;
 }
 
 // Verify Email Input Arguments

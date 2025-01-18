@@ -21,7 +21,7 @@ import cookieParser from "cookie-parser";
 dotenv.config();
 const PORT = process.env.PORT || 7000;
 const node_env = process.env.NODE_ENV || "development";
-const corsOrigin = ["http://localhost:8000", "http://localhost:3001", "http://localhost:3000", "https://competitions.saarang.org", "https://join.saarang.org","https://saarang.org"];
+const corsOrigin = ["http://localhost:5173", "http://localhost:3001", "http://localhost:3000", "https://competitions.saarang.org", "https://join.saarang.org","https://saarang.org"];
 async function bootstrap() {
   const schema = await buildSchema({
     resolvers: resolvers,

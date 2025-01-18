@@ -39,8 +39,8 @@ export class UserResolver {
     const newUser = User.create({
       name: args.name,
       email: args.email,
-      role: args.role || 'user',
       password: hashedPassword,
+      role:"Aspiring-CRC"
     });
 
     await newUser.save();
